@@ -901,6 +901,14 @@ nav{
     border:1px solid #1e2a3a;
 }
 
+.contact-fullname{
+    font-size:22px;
+    font-weight:800;
+    color:white;
+    margin-bottom:4px;
+    letter-spacing:0.3px;
+}
+
 .contact-info h3{
     font-size:20px;
     font-weight:700;
@@ -1099,4 +1107,16 @@ nav{
         width:auto;
     }
 
+}
+
+/* FOOTER */
+
+.site-footer{
+    text-align:center;
+    padding:24px 20px;
+    background:#080c14;
+    border-top:1px solid #1e2a3a;
+    color:#555;
+    font-size:13px;
+    letter-spacing:0.3px;
 }
