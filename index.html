@@ -1,115 +1,729 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carla Jane Mabutol | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carla Jane Mabutol | Full Stack Developer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
+
 <body>
 
-    <nav>
-        <h2>CJM</h2>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <i class="fa-solid fa-code"></i>
+      Carla.dev
+    </div>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Carla Jane R. Mabutol</h1>
-            <p>Software Engineer | Laravel | Vue | Flutter | React</p>
-            <button onclick="scrollToContact()">Contact Me</button>
-        </div>
-        <img src="assets/profile.png" alt="Profile Photo">
-    </section>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#tech-stack">Tech Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger">
+    </div>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-left">
+
+      <div class="line"></div>
+
+      <h1>
+        I'm Carla,<br>
+        a Full Stack  & Mobile Developer
+      </h1>
+
+      <p>
+        I specialize in building beautiful, modern, scalable, and high-quality digital products<br>
+        -- faster with AI, smarter with experience.
+      </p>
+
+      <button class="scroll-btn" onclick="scrollToProjects()">
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+
+    </div>
+
+    <div class="hero-center">
+      <img src="assets/profile.png" alt="Carla">
+    </div>
+
+    <div class="hero-right">
+
+      <div class="info-card">
+        <h3>ABOUT ME</h3>
         <p>
-            Software Engineer with hands-on experience in mobile and web development,
-            API integrations, AI-powered applications, and cross-functional collaboration.
-            Passionate about building scalable software and creating great user experiences.
+          Passionate full stack developer with experience in
+          mobile and web application development, quality assurance,
+          and enterprise solutions.
+        </p>
+        <a href="#about" class="card-link">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="info-card">
+        <h3>MY WORK</h3>
+        <p>
+          Building modern HRIS, EICMS, AI-powered systems,
+          mobile applications, and scalable APIs.
+        </p>
+        <a href="#projects" class="card-link">BROWSE PORTFOLIO <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="socials">
+        <h4>FOLLOW ME</h4>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/carla.j.mabutol" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/carlyyjane_m?igsh=ZW91cDU5ZHY4Yjl0&utm_source=qr"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/carla-jane-mabutol-54051b244"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/carlamabutol"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+
+    <h2>About Me</h2>
+    <p class="section-tagline">Creating Digital <span>Experiences</span></p>
+
+    <div class="about-bio">
+
+      <!-- Left: Profile image -->
+      <div class="about-image">
+        <img src="assets/profile2.jpg" alt="Carla Jane Mabutol">
+      </div>
+
+      <!-- Right: Text content -->
+      <div class="about-bio-text">
+
+        <h3 class="who-heading">Who I Am</h3>
+
+        <div class="role-tags">
+          <span>Full-Stack Developer</span>
+          <span>Mobile Developer</span>
+          <span>Web Developer</span>
+          <span>IT & AI Enthusiast</span>
+        </div>
+
+        <p class="about-lead">
+          I’m a developer who enjoys exploring technology while building real-world solutions.
         </p>
 
-        <div class="skills">
-            <span>Laravel</span>
-            <span>Vue.js</span>
-            <span>Flutter</span>
-            <span>React</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>API Testing</span>
-            <span>Docker</span>
-            <span>JavaScript</span>
+        <p class="about-body">
+          I’m adaptable, fast to learn, and comfortable stepping into tools I haven’t used before.
+          I use AI effectively and responsibly to speed up development while maintaining excellent
+          quality — ensuring every deliverable is clean, functional, and scalable.
+        </p>
+
+        <p class="about-body">
+          With hands-on experience building enterprise HRIS systems, AI-powered applications,
+          cross-platform mobile apps with Flutter, and full-stack web platforms using Laravel and
+          Vue.js — I bring a well-rounded, end-to-end perspective to every project I take on.
+        </p>
+
+        <p class="about-body">
+          I’ve also worked in Quality Assurance — conducting UAT, Selenium testing, and API
+          validation — which means I don’t just build features, I make sure they actually work.
+        </p>
+
+        <p class="about-body">
+          My background as a Cold Caller in the publishing industry further sharpened my
+          communication and client engagement skills — so I can work just as well with
+          stakeholders as I can with a codebase.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+
+    <h2>Experience</h2>
+    <p class="section-tagline">Building real-world solutions and <span>growing professionally</span></p>
+
+    <div class="timeline">
+
+      <!-- Freelance -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-icon-wrap">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
         </div>
-    </section>
+        <div class="timeline-card">
+          <h3>Freelance Full Stack Developer</h3>
+          <span class="timeline-meta">10/2025 – Present &nbsp;·&nbsp; Multipletech &nbsp;·&nbsp; Independent</span>
+          <ul class="timeline-list">
+            <li>Delivered full-stack web and mobile applications for various clients, handling projects end-to-end from design to deployment.</li>
+            <li>Collaborated closely with clients through clear communication and iterative feedback to ensure expectations were met or exceeded.</li>
+            <li>Demonstrated adaptability by adjusting features and workflows based on feedback while prioritizing quality, usability, and performance.</li>
+          </ul>
+        </div>
+      </div>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
+      <!-- Asiagate -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-icon-wrap">
+            <i class="fa-solid fa-building"></i>
+          </div>
+        </div>
+        <div class="timeline-card">
+          <h3>Software Engineer II</h3>
+          <span class="timeline-meta">06/2024 – Present &nbsp;·&nbsp; Asiagate Networks Inc.</span>
+          <ul class="timeline-list">
+            <li>Developed and maintained enterprise HRIS mobile and web systems using Flutter and Laravel.</li>
+            <li>Built and integrated RESTful APIs for enterprise workflows, approvals, and employee management features.</li>
+            <li>Collaborated with cross-functional teams to deliver scalable, high-quality enterprise applications on tight deadlines.</li>
+          </ul>
+        </div>
+      </div>
 
-        <div class="card">
-            <h3>Asiagate Networks Inc.</h3>
-            <p><strong>Software Engineer I</strong> | 2024 - Present</p>
-            <ul>
-                <li>Develop HRIS mobile applications and API endpoints.</li>
-                <li>Maintain HRIS consistency with web applications.</li>
-                <li>Collaborate with teams to optimize performance.</li>
-            </ul>
+      <!-- Magus -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-icon-wrap">
+            <i class="fa-solid fa-code"></i>
+          </div>
+        </div>
+        <div class="timeline-card">
+          <h3>Junior Developer</h3>
+          <span class="timeline-meta">05/2022 – 06/2024 &nbsp;·&nbsp; Magus Technology Inc.</span>
+          <ul class="timeline-list">
+            <li>Built the Magus Subliminal Audio Platform — a cross-platform mobile and web app for tracking audio sessions using Flutter and Laravel.</li>
+            <li>Developed an AI-powered Budget Planning App helping users manage finances based on family size and financial capability.</li>
+            <li>Contributed to responsive UI design and full-stack features across multiple client-facing projects.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nityo -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-icon-wrap">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+        </div>
+        <div class="timeline-card">
+          <h3>Junior Quality Assurance</h3>
+          <span class="timeline-meta">09/2022 – 08/2023 &nbsp;·&nbsp; Nityo Infotech Services Philippines Inc.</span>
+          <ul class="timeline-list">
+            <li>Conducted thorough QA and user acceptance testing (UAT) for enterprise web and mobile applications.</li>
+            <li>Performed API testing, Selenium automation testing, and documented bugs with detailed reproduction steps.</li>
+            <li>Ensured software quality through systematic test planning, execution, and cross-team validation processes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Czilk -->
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <div class="timeline-icon-wrap">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+        </div>
+        <div class="timeline-card">
+          <h3>Sales Representative & Cold Caller</h3>
+          <span class="timeline-meta">05/2022 – 09/2022 &nbsp;·&nbsp; Czilk DC</span>
+          <ul class="timeline-list">
+            <li>Handled outbound sales calls in the publishing industry, engaging clients and presenting product value effectively.</li>
+            <li>Developed strong communication, negotiation, and client relationship skills that now complement technical work.</li>
+            <li>Consistently met outreach targets while maintaining professional and persuasive client interactions.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section" id="tech-stack">
+
+    <h2>Tech Stack</h2>
+    <p class="section-tagline">Tools and technologies I use to <span>bring ideas to life</span></p>
+
+    <div class="stack-filters">
+      <button class="stack-filter active" data-filter="all">All</button>
+      <button class="stack-filter" data-filter="frontend">Frontend</button>
+      <button class="stack-filter" data-filter="backend">Backend</button>
+      <button class="stack-filter" data-filter="mobile">Mobile</button>
+      <button class="stack-filter" data-filter="databases">Databases</button>
+      <button class="stack-filter" data-filter="devops">DevOps</button>
+      <button class="stack-filter" data-filter="integrations">Integrations</button>
+      <button class="stack-filter" data-filter="ai">AI-Assisted</button>
+    </div>
+
+    <div class="stack-grid">
+
+      <!-- Frontend -->
+      <div class="stack-item" data-category="frontend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a3a2a,#41b883)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+        </div>
+        <span>Vue.js</span>
+      </div>
+
+      <div class="stack-item" data-category="frontend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#0d2233,#61dafb)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+        </div>
+        <span>React.js</span>
+      </div>
+
+      <div class="stack-item" data-category="frontend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#5c1a00,#e34c26)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        </div>
+        <span>HTML5</span>
+      </div>
+
+      <div class="stack-item" data-category="frontend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#0a2a4a,#264de4)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        </div>
+        <span>CSS3</span>
+      </div>
+
+      <div class="stack-item" data-category="frontend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a1700,#f7df1e)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        </div>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="stack-item" data-category="frontend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#2e1a4e,#7952b3)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+        </div>
+        <span>Bootstrap</span>
+      </div>
+
+      <div class="stack-item" data-category="frontend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#0f172a,#0ea5e9)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+        </div>
+        <span>Tailwind CSS</span>
+      </div>
+
+      <!-- Backend -->
+      <div class="stack-item" data-category="backend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a0000,#ff2d20)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+        </div>
+        <span>Laravel</span>
+      </div>
+
+      <div class="stack-item" data-category="backend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1e1a40,#777bb4)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        </div>
+        <span>PHP</span>
+      </div>
+
+      <div class="stack-item" data-category="backend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#0d2b1a,#2d9e6b)">
+          <i class="fa-solid fa-plug" style="color:white;font-size:28px"></i>
+        </div>
+        <span>REST API</span>
+      </div>
+
+      <div class="stack-item" data-category="backend">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#0d1f33,#21759b)">
+          <i class="fab fa-wordpress" style="color:white;font-size:30px"></i>
+        </div>
+        <span>WordPress</span>
+      </div>
+
+      <!-- Mobile -->
+      <div class="stack-item" data-category="mobile">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#012c4a,#54c5f8)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+        </div>
+        <span>Flutter</span>
+      </div>
+
+      <div class="stack-item" data-category="mobile">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#012d4f,#0175c2)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+        </div>
+        <span>Dart</span>
+      </div>
+
+      <div class="stack-item" data-category="mobile">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#001a2e,#61dafb)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native">
+        </div>
+        <span>React Native</span>
+      </div>
+
+      <div class="stack-item" data-category="mobile">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#012c4a,#54c5f8)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="FlutterFlow">
+        </div>
+        <span>FlutterFlow</span>
+      </div>
+
+      <div class="stack-item" data-category="mobile">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#2a0a00,#f05138)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="SwiftUI">
+        </div>
+        <span>SwiftUI</span>
+      </div>
+
+      <!-- Databases -->
+      <div class="stack-item" data-category="databases">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#0d1f33,#4479a1)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        </div>
+        <span>MySQL</span>
+      </div>
+
+      <div class="stack-item" data-category="databases">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#3d1800,#ffca28)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" alt="Firebase">
+        </div>
+        <span>Firebase</span>
+      </div>
+
+      <!-- DevOps -->
+      <div class="stack-item" data-category="devops">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#2e0d00,#f05032)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        </div>
+        <span>Git</span>
+      </div>
+
+      <div class="stack-item" data-category="devops">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#111,#444)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)">
+        </div>
+        <span>GitHub</span>
+      </div>
+
+      <div class="stack-item" data-category="devops">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a0030,#0e76a8)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+        </div>
+        <span>VS Code</span>
+      </div>
+
+      <div class="stack-item" data-category="devops">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a0e00,#ff9900)">
+          <i class="fab fa-aws" style="color:white;font-size:30px"></i>
+        </div>
+        <span>AWS</span>
+      </div>
+
+      <!-- Integrations -->
+      <div class="stack-item" data-category="integrations">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a0000,#ea4335)">
+          <i class="fa-solid fa-envelope" style="color:white;font-size:26px"></i>
+        </div>
+        <span>Email Integration</span>
+      </div>
+
+      <div class="stack-item" data-category="integrations">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#003a1a,#25d366)">
+          <i class="fa-solid fa-comment-sms" style="color:white;font-size:26px"></i>
+        </div>
+        <span>SMS Integration</span>
+      </div>
+
+      <div class="stack-item" data-category="integrations">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#001a33,#0066cc)">
+          <i class="fa-solid fa-credit-card" style="color:white;font-size:26px"></i>
+        </div>
+        <span>PayMongo</span>
+      </div>
+
+      <div class="stack-item" data-category="integrations">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a1040,#635bff)">
+          <i class="fab fa-stripe-s" style="color:white;font-size:30px"></i>
+        </div>
+        <span>Stripe</span>
+      </div>
+
+      <div class="stack-item" data-category="integrations">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#001a2e,#0088cc)">
+          <i class="fa-solid fa-shield-halved" style="color:white;font-size:26px"></i>
+        </div>
+        <span>ShuftiPro</span>
+      </div>
+
+      <!-- AI-Assisted -->
+      <div class="stack-item" data-category="ai">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#0d1a00,#2ea84c)">
+          <i class="fa-solid fa-robot" style="color:white;font-size:28px"></i>
+        </div>
+        <span>GitHub Copilot</span>
+      </div>
+
+      <div class="stack-item" data-category="ai">
+        <div class="stack-icon" style="background:linear-gradient(135deg,#1a0c00,#d97706)">
+          <i class="fa-solid fa-brain" style="color:white;font-size:28px"></i>
+        </div>
+        <span>Claude AI</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+
+    <h2>Projects</h2>
+    <p class="section-tagline">A collection of projects that showcase <span>my skills and creativity</span></p>
+
+    <div class="projects-grid">
+
+      <!-- MAGUS -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#1a2a1a,#41b883)">
+          <i class="fa-solid fa-headphones-simple"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Magus Subliminal Audio</h3>
+          <p>A cross-platform web and mobile application for managing and tracking subliminal audio sessions. Users can monitor progress, manage multiple sessions, and access content seamlessly across devices.</p>
+          <button class="preview-btn" onclick="openLightbox('Magus Subliminal Audio Platform', ['assets/projects/magus_web.png','assets/projects/magus_web_1.png','assets/projects/magus_web_2.png','assets/projects/magus_web_3.png','assets/projects/magus_mobile.png','assets/projects/magus_mobile_1.png','assets/projects/magus_mobile_2.png','assets/projects/magus_mobile_3.png'])">
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+        </div>
+      </div>
+
+      <!-- AI BUDGET PLANNER -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#0d1a2a,#7c3aed)">
+          <i class="fa-solid fa-brain"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>AI Budget Planner</h3>
+          <p>An intelligent personal finance tool powered by AI that helps users plan, track, and optimize their budgets. Provides smart spending insights, category breakdowns, and personalized savings recommendations.</p>
+        </div>
+      </div>
+
+      <!-- JOBBYLINK -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#1a1000,#f59e0b)">
+          <i class="fa-solid fa-briefcase"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Jobbylink</h3>
+          <p>A job portal and recruitment platform connecting employers and job seekers. Features include job listings, applicant tracking, profile management, and real-time notifications on both web and mobile.</p>
+          <button class="preview-btn" onclick="openLightbox('Jobbylink', ['assets/projects/jobbylink_web.png','assets/projects/jobbylink_web_1.png','assets/projects/jobbylink_web_2.png','assets/projects/jobbylink_web_3.png','assets/projects/jobbylink_mobile.png','assets/projects/jobbylink_mobile_1.png','assets/projects/jobbylink_mobile_2.png'])">
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+        </div>
+      </div>
+
+      <!-- SCAN IT APP -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#0a1a10,#10b981)">
+          <i class="fa-solid fa-barcode"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Scan It App</h3>
+          <p>A mobile application that scans barcode and QR code images to instantly retrieve product details and surface curated purchase recommendations across Amazon UK, eBay, John Lewis, and other UK shopping affiliates — helping users find the best deals in seconds.</p>
+        </div>
+      </div>
+
+      <!-- ENGAGIA -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#1a0a00,#ef4444)">
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Engagia — Quality Assurance</h3>
+          <p>Performed end-to-end QA testing on this enterprise platform, covering functional testing, UAT, Selenium automation, API validation, and detailed bug documentation to ensure production-ready quality.</p>
+          <button class="preview-btn" onclick="openLightbox('Engagia', ['assets/projects/engagia_web.png','assets/projects/engagia_web_1.png','assets/projects/engagia_mobile.png','assets/projects/engagia_mobile_1.png','assets/projects/engagia_mobile_2.png','assets/projects/engagia_mobile_3.png'])">
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+        </div>
+      </div>
+
+      <!-- HRIS -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#001a33,#2d8cff)">
+          <i class="fa-solid fa-users"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Human Resource Information System</h3>
+          <p>Enterprise Human Resource Information System mobile app built with Flutter. Handles employee management, leave approvals, workflows, and API integrations.</p>
+          <button class="preview-btn" onclick="openLightbox('HRIS Mobile System', ['assets/projects/hris_mobile.png','assets/projects/hris_mobile_1.png','assets/projects/hris_mobile_2.png','assets/projects/hris_mobile_3.png'])">
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+        </div>
+      </div>
+
+      <!-- EICMS -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#0a1a0a,#16a34a)">
+          <i class="fa-solid fa-id-card"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Enhanced Investigation and Case Management System (EICMS)</h3>
+          <p>Enterprise web system for managing investigations and cases end-to-end — from filing and evidence tracking to workflow routing, approvals, and resolution. Built for government and institutional use.</p>
+        </div>
+      </div>
+
+      <!-- CAKESTOP -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#2a0a1a,#f472b6)">
+          <i class="fa-solid fa-cake-candles"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Cakestop Website</h3>
+          <p>Maintained and enhanced the Cakestop e-commerce website built on WordPress. Managed content updates, plugin configuration, theme customization, and ensured the site runs smoothly for online cake and pastry orders.</p>
+          <button class="preview-btn" onclick="openLightbox('Cakestop Website', ['assets/projects/wordpress.png'])">
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+        </div>
+      </div>
+
+      <!-- COFFEE AND CREAM -->
+      <div class="project-card">
+        <div class="project-header" style="background:linear-gradient(135deg,#1a0e00,#b45309)">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span class="project-badge"></span>
+        </div>
+        <div class="project-content">
+          <h3>Coffee and Cream Website</h3>
+          <p>Maintained the Coffee and Cream business website built on WordPress. Handled content management, theme updates, plugin maintenance, and ensured consistent performance and uptime for the brand's online presence.</p>
+          <button class="preview-btn" onclick="openLightbox('Coffee and Cream Website', ['assets/projects/wordpress_1.png'])">
+            <i class="fa-solid fa-eye"></i> Preview
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h3 class="lightbox-title" id="lightboxTitle"></h3>
+      <div class="lightbox-viewer">
+        <button class="lightbox-nav" id="lightboxPrev" onclick="lightboxNav(-1)">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="lightbox-main-frame">
+          <img id="lightboxMainImg" src="" alt="">
+        </div>
+        <button class="lightbox-nav" id="lightboxNext" onclick="lightboxNav(1)">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+      <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+
+    <h2>Get In Touch</h2>
+    <p class="section-tagline">Let's Create Something <span>Amazing</span></p>
+    <p class="contact-subtitle">Have an idea, a project, or just want to connect? I'd love to hear from you.</p>
+
+    <div class="contact-layout">
+
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <span class="contact-info-label">Email</span>
+            <p>crolmabutol@gmail.com</p>
+          </div>
         </div>
 
-        <div class="card">
-            <h3>Magus Technology Inc.</h3>
-            <p><strong>Junior Developer</strong> | 2023 - 2024</p>
-            <ul>
-                <li>Built mobile and web applications.</li>
-                <li>Developed AI-powered budgeting web apps.</li>
-                <li>Created user-friendly responsive interfaces.</li>
-            </ul>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <span class="contact-info-label">Phone</span>
+            <p>09993248527</p>
+          </div>
         </div>
 
-        <div class="card">
-            <h3>Czilk DC</h3>
-            <p><strong>Sales Representative</strong> | 2022 - 2023</p>
-            <ul>
-                <li>Lead generation and sales closing.</li>
-                <li>Email communication and customer support.</li>
-                <li>Client relationship management.</li>
-            </ul>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <span class="contact-info-label">Location</span>
+            <p>Nasugbu, Batangas, Philippines</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
+      <!-- Right: Form -->
+      <form class="contact-form" id="contactForm" onsubmit="sendMailto(event)">
 
-        <div class="project-grid">
-            <div class="card">
-                <h3>HRIS Mobile App</h3>
-                <p>Human Resource Information System mobile application with API integration.</p>
-            </div>
-
-            <div class="card">
-                <h3>AI Budget Planning App</h3>
-                <p>AI-powered budgeting application for family expense planning.</p>
-            </div>
-
-            <div class="card">
-                <h3>Subliminal Audio Tracker</h3>
-                <p>Application for tracking multiple subliminal audio sessions.</p>
-            </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="contactName" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" id="contactEmail" placeholder="your@email.com" required>
+          </div>
         </div>
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: crolmabutol@gmail.com</p>
-        <p>Phone: 09218075796</p>
-        <p>Nasugbu, Batangas, Philippines</p>
-    </section>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="contactSubject" placeholder="Hello" required>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="contactMessage" placeholder="Tell me about your project..." rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
